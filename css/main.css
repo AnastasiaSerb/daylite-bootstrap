@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: #868585;
+	background: #fdfcfb;
+	font-weight: normal;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+header{
+	margin: 100px 0 80px;
+}
+
+.menu{
+	background: #fefefe;
+	border: 0;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .19);
+	padding: 15px 0;
+
+}
+.navbar-brand{
+	padding-right: 80px;
+}
+.navbar-brand img{
+	position: relative;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #8d8c8c;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.navbar-nav>li.active-link>a{
+	border-bottom: 1px solid #d42819;
+    color: #8d8c8c;
+}
+.navbar-default .navbar-nav:not(.icons)>li>a:hover{
+    border-bottom: 1px solid #d42819;
+    color: #8d8c8c;
+}
+.icons li a{
+	padding: 15px 5px;
+}
+
+.menu .conteiner{
+	position: relative;
+}
+.globe{
+	font-size: 32px;
+	line-height: 88px;
+	position: absolute;
+	right: 60px;
+	cursor: pointer;
+	color: #d0cfce;
+	display: none;
+}
+.slogan{
+	margin-bottom: 80px;
+}
+.slogan h1{
+	margin: 0;
+	text-align: center;
+	color: #7e7e7e;
+	font-size: 33px;
+}
+.slogan h1 span{
+	color: #d42819;
+}
+.card-row{
+	margin-bottom: 50px;
+}
+.card-row img{
+	box-shadow: 0 0 5px rgba(0, 0, 0, .19);
+	transition: all 0.5s;
+}
+.card-row a:hover img{
+	box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+}
+.nav-pager{
+	text-align: center;
+}
+.pagination>li>a, .pagination>li>span{
+	color: #b5b3b3;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover,
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover{
+	background: #fff;
+	border: 1px solid #ddd;
+	color: #d42819;
+}
+footer{
+	margin-bottom: 100px;
+
+}
+footer hr{
+	border-color: #b7b6b6;
+}
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media  (max-width: 991px) {
+.navbar-brand{
+	padding-right: 15px;
+}
+.icons{
+	display: none;
+	position: absolute;
+	right: 70px;
+	top: 70px;
+}
+.icons li a{
+	padding: 5px;
+	z-index: 1;
+}
+.icons li{
+	float: none;
+}
+.globe{
+	display: block;
+
+}
+.card-row{
+	text-align: center;
+}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .globe{
+    	display: none;
+    }
+    .menu{
+    	padding: 0px;
+    }
+    .navbar-brand img{
+	max-height: 30px;
+}
+.navbar-nav>li>a{
+	transition: all .8s;
+}
+.navbar-nav>li.active-link>a{
+	border-bottom: 0;
+    color: #fff;
+    background: #d42819;
+}
+.navbar-default .navbar-nav:not(.icons)>li>a:hover{
+    border-bottom:0;
+    color: #fff;
+    background: #d42819;
+}
+.icons{
+	display: block !important;
+	position: relative;
+	right: 0;
+	top: 0;
+
+}
+.icons li{
+	display: inline-block;
+}
+.card-row{
+	margin-bottom: 0;
+}
+.card{
+	margin-bottom: 50px;
+}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+   header,
+   .slogan{
+   	margin-bottom: 30px;
+   }
+   .slogan h1{
+   	font-size: 25px;
+   }
+}
+
+
+@media (min-width: 992px) {
+   .icons{
+   	display: block !important;
+
+   }
+}
